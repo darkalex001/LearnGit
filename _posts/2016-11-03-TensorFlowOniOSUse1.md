@@ -1,8 +1,8 @@
 ---
 layout: post
 title: TensorFlow 在 iOS 平台上的使用(一)
-date: 2016-11-03 
-tags: 机器学习    
+date: 2016-11-03
+tags: 机器学习
 ---
 
 　　距离上次使用 TensorFlow 在iOS平台上做的小 Demo，已经过了四个月了，今天忽然想再看看,发现 Demo 已经不见了，我只能从头在编一次，这次发现编译 iOS 库，简单多了。
@@ -50,12 +50,12 @@ autoreconf: automake failed with exit status: 1
 
 解决方法是：先卸载 libtool 在重新安装，`brew uninstall libtool` && `brew install libtool`
 
-如果你还遇到了其它问题，可以看看我之前的一片文章 [iOS开发迎来机器学习的春天---TensorFlow](http://baixin.io/2016/07/iOSMachineLearning_TensorFlow/) ，或者是直接去 tensorflow 的 [Issues](https://github.com/tensorflow/tensorflow/issues) 里面找。 
+如果你还遇到了其它问题，可以看看我之前的一片文章 [iOS开发迎来机器学习的春天---TensorFlow](http://baixin.io/2016/07/iOSMachineLearning_TensorFlow/) ，或者是直接去 tensorflow 的 [Issues](https://github.com/tensorflow/tensorflow/issues) 里面找。
 
 一个小时后。。。　如果编译没出问题，你可以在目录　`tensorflow-master/tensorflow/contrib/makefile／gen/lib` 下找到一个静态库：`libtensorflow-core.a` ，把这个静态库拷贝到 camera 项目中，然后编译运行。
 
 <br>
-转载请注明：[潘柏信的博客](http://baixin) » [点击阅读原文]()     
+转载请注明：[高凯成的博客](http://baixin) » [点击阅读原文]()
 
 
 
