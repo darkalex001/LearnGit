@@ -1,3 +1,8 @@
+layout: post
+title: Jekyll搭建个人博客(二)
+date: 2017-09-05 
+tags: 博客
+
 # Vim
 
 在windows系统中,  大家可以用 Sublime, PHPStorm, ATom, NodePad++ 等各种编辑器来编写代码. 
