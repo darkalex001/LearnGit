@@ -2,20 +2,20 @@
 layout: post
 title: CocoaPods使用心得
 date: 2016-04-02
-tag: iOS
----
+tag: iOS 
+--- 
 
-### 简介：
+### 简介：   
 　本章介绍什么是 `CocoaPods` ,如何使用 `CocoaPods` , 以及 `CocoaPods` 的原理,和使用 `CocoaPods` 时经常出现的一些问题。
 
 　Cocoapods 是 OS X 和 iOS 下的一个第三方库管理工具。我们能使用CocoaPods添加被称作 “Pods”的依赖库,并轻松管理它们的版本,CocoaPods会帮我们配置好这些三方库的路径及开发环境,极大的提升了开发者的工作效率。
 
 
-### 安装CocoaPods　
+### 安装CocoaPods　    
 
 　Mac下自带ruby,使用ruby的gem命令安装,ruby的软件源被墙了,把官方的ruby源替换成国内的淘宝源。
 
-### 更换Gem源
+### 更换Gem源   
 
 ```bash
 $ gem sources --remove https://rubygems.org/
@@ -42,7 +42,7 @@ sudo gem update --system
 
 ```
 
-### 安装cocoapods
+### 安装cocoapods        
 
 ```bash
 
@@ -113,7 +113,7 @@ pod 'AFNetworking+AutoRetry', '~> 0.0.5'
 
 ```
 
-pod search 是CocoaPods的一个搜索命令,我们可以用来搜索任何托管在CocoaPods上的三方库。
+pod search 是CocoaPods的一个搜索命令,我们可以用来搜索任何托管在CocoaPods上的三方库。    
 
 使用CocoaPods时需要新建一个 Podfile 的文件,cd 到 我的Demo项目里，Demo目录下有三个文件
 
@@ -166,11 +166,11 @@ Demo.xcworkspace 、Podfile 、Podfile.lock 、Pods
 
 待续…
 
-[深入理解 CocoaPods](http://blog.jobbole.com/53365/)
+[深入理解 CocoaPods](http://blog.jobbole.com/53365/)    
 
 <br>
 
-转载请注明：[高凯成的博客](http://baixin) » [点击阅读原文](http://baixin.io/2016/04/CocoaPod_Use/)
+转载请注明：[潘柏信的博客](http://baixin) » [点击阅读原文](http://baixin.io/2016/04/CocoaPod_Use/)     
 
 
 
