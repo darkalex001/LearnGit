@@ -1,7 +1,9 @@
+---
 layout: post
-title: Jekyll搭建个人博客(二)
-date: 2017-09-05 
-tags: 博客
+title: Vim编辑器的使用
+date: 2019-09-20
+tags: 博客   
+---
 
 # Vim
 
