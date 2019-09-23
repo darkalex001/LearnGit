@@ -153,7 +153,7 @@ store.manifestUrl = "manifest.json"
   "betaManifestVersion": 1,
   "version": "1.0",
   "entries": [
-    { "url": "index.html" }, 
+    { "url": "index.html" },
     { "url": "main.js" }
   ]
 }
@@ -174,7 +174,7 @@ main.js
 
 是的，Gears 的 LocalServer 就是后来大家所熟知的 App Cache 的前身，大约从 [2008][spec10] 年开始 W3C 就开始尝试将 Gears 进行标准化了；除了 LocalServer，Gears 中用于提供并行计算能力的 WorkerPool 模块与用于提供本地数据库与 SQL 支持的 Database 模块也分别是日后 Web Worker 与 Web SQL Database（后被废弃）的前身。
 
-HTML5 App Cache 作为第二波「让 web 应用离线执行」的尝试，确实也服务了比如 Google Doc、尤雨溪早年作品 HTML5 Clear、以及一直用 web 应用作为自己 iOS 应用的 FT.com（Financial Times）等不少 web 应用。那么，还有 Service Worker 什么事呢？  
+HTML5 App Cache 作为第二波「让 web 应用离线执行」的尝试，确实也服务了比如 Google Doc、尤雨溪早年作品 HTML5 Clear、以及一直用 web 应用作为自己 iOS 应用的 FT.com（Financial Times）等不少 web 应用。那么，还有 Service Worker 什么事呢？
 
 是啊，如果 App Cache 没有被设计得[烂到完全不可编程、无法清理缓存、几乎没有路由机制、出了 Bug 一点救都没有][s12]，可能就真没 Service Worker 什么事了。[App Cache 已经在前不久定稿的 HTML5.1 中被拿掉了，W3C 为了挽救 web 世界真是不惜把自己的脸都打肿了……][s13]
 
@@ -259,13 +259,13 @@ self.addEventListener('push', event => {
   );
 });
 
-self.addEventListener('notificationclick', event => {  
-  // Do something with the event  
-  event.notification.close();  
+self.addEventListener('notificationclick', event => {
+  // Do something with the event
+  event.notification.close();
 });
 
-self.addEventListener('notificationclose', event => {  
-  // Do something with the event  
+self.addEventListener('notificationclose', event => {
+  // Do something with the event
 });
 ```
 
@@ -362,7 +362,7 @@ PWA 作为一个涵盖性术语，与过往的这些或多或少通过私有平�
 
 **让我们的用户，也像我们这般热爱 web 吧。**
 
-黄玄，于 12 月的北京。
+高凯成，于 12 月的北京。
 
 ---
 

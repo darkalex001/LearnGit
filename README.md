@@ -1,7 +1,7 @@
 Hux Blog
 ========
 
-### [View Live Hux Blog &rarr;](https://huangxuan.me)  
+### [View Live Hux Blog &rarr;](https://huangxuan.me)
 
 ![](http://huangxuan.me/img/blog-desktop.jpg)
 
@@ -11,7 +11,7 @@ Boilerplate (beta)
 
 **Bolierplate has been serveral verisons outdated. Helps wanted for updating it on par with the main repo.**
 
-Want to clone a boilerplate instead of my buzz blog? Here comes this!  
+Want to clone a boilerplate instead of my buzz blog? Here comes this!
 
 ```
 $ git clone git@github.com:Huxpro/huxblog-boilerplate.git
@@ -20,7 +20,7 @@ $ git clone git@github.com:Huxpro/huxblog-boilerplate.git
 **[View Boilerplate Here &rarr;](http://huangxuan.me/huxblog-boilerplate/)**
 
 
-Porting 
+Porting
 --------
 
 - [**Hexo**](https://github.com/Kaijun/hexo-theme-huxblog) by @kaijun
@@ -48,7 +48,7 @@ Releases
 #### V1.8
 
 - Brand new [Archive](https://huangxuan.me/archive/) page! It combines previous Archive and Tag page and it's backward-cmpatible.
-Shout out to [@kitian616/jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme) of bringing this idea. 
+Shout out to [@kitian616/jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme) of bringing this idea.
 - Improve engineering by extracting duplicated liquid templates into reuseable includes. This was proposed in #74 by @Kaijun but postponed for entirely 2.5 years! I wasn't able to merge his PR directly because of long-time divegence but the credit is belonging to @Kaijun.
 - Improved code block. Long-wanted line number are supported out of the box (thanks for @SmilingParadise's help from Sina Weibo), the default theme is updated to Atom One Dark as well (checkout FQA for how to change to your farovite theme)
 - MathJax support by @Voleking in #80. I choose to use the SVG renderer though. See [Mathjax, kramdown and Octopress](https://www.lucypark.kr/blog/2013/02/25/mathjax-kramdown-and-octopress/) for writing and escaping details.
@@ -119,7 +119,7 @@ Shout out to [@kitian616/jekyll-TeXt-theme](https://github.com/kitian616/jekyll-
 Support
 -------
 
-- **Feel free to fork**. 
+- **Feel free to fork**.
 - I'll appreciate it if you keep the OG author and github link at footer.
 - **Star** the repo if you like it.
 - **Open issues** so people could help you.
@@ -163,7 +163,7 @@ title: Hux Blog             # title of your website
 SEOTitle: Hux Blog          # check out docs for more detail
 description: "Cool Blog"    # ...
 
-# SNS settings      
+# SNS settings
 github_username: huxpro     # modify this account to yours
 weibo_username: huxpro      # the footer woule be auto-updated.
 
@@ -171,13 +171,13 @@ weibo_username: huxpro      # the footer woule be auto-updated.
 paginate: 10                # nums of posts in one page
 ```
 
-For more options, please check out [Jekyll - Official Site](http://jekyllrb.com/). 
-Most of them are very descriptive so feel brave to dive into code directly as well. 
+For more options, please check out [Jekyll - Official Site](http://jekyllrb.com/).
+Most of them are very descriptive so feel brave to dive into code directly as well.
 
 
 ### Writing Posts
 
-Posts are simply Markdown files in the `_posts/`. 
+Posts are simply Markdown files in the `_posts/`.
 
 Metadata of posts are written in **front-matter**. A example post could start with:
 
@@ -207,23 +207,23 @@ sidebar-about-description: "your description here"
 sidebar-avatar: /img/avatar-hux.jpg     # use absolute URL.
 ```
 
-Modules *[Featured Tags](#featured-tags)*, *[Mini About Me](#mini-about-me)* and *[Friends](#friends)* are turned on by default and you can add your own. The sidebar is naturally responsive, i.e. be pushed to bottom in a smaller screen (`<= 992px`, according to [Bootstarp Grid System](http://getbootstrap.com/css/#grid))  
+Modules *[Featured Tags](#featured-tags)*, *[Mini About Me](#mini-about-me)* and *[Friends](#friends)* are turned on by default and you can add your own. The sidebar is naturally responsive, i.e. be pushed to bottom in a smaller screen (`<= 992px`, according to [Bootstarp Grid System](http://getbootstrap.com/css/#grid))
 
 
 ### Mini About Me
 
-**Mini-About-Me** displays your avatar, description and all SNS buttons if  `sidebar-avatar` and `sidebar-about-description` variables are set. 
+**Mini-About-Me** displays your avatar, description and all SNS buttons if  `sidebar-avatar` and `sidebar-about-description` variables are set.
 
 It would be hidden in a smaller screen when the entire sidebar are pushed to bottom. Since there is already SNS portion there in the footer.
 
 ### Featured Tags
 
 **Featured-Tags** is similar to any cool tag features in website like [Medium](http://medium.com).
-Started from V1.4, this module can be used even when sidebar is off and displayed always in the bottom. 
+Started from V1.4, this module can be used even when sidebar is off and displayed always in the bottom.
 
 ```yml
 # Featured Tags
-featured-tags: true  
+featured-tags: true
 featured-condition-size: 1     # A tag will be featured if the size of it is more than this condition value
 ```
 
@@ -266,7 +266,7 @@ iframe:     "http://huangxuan.me/js-module-7day/"
 ---
 ```
 
-The `iframe` element will be automatically resized to adapt different form factors and device orientation. 
+The `iframe` element will be automatically resized to adapt different form factors and device orientation.
 Because most of the keynote framework prevent the browser default scroll behavior. A bottom-padding is set to help user and imply user that more content could be presented below.
 
 
@@ -331,7 +331,7 @@ In technical views, it can be done with CSS. However, the opacity of the black o
 ### SEO Title
 
 Before V1.4, site setting `title` is not only used for displayed in Home Page and Navbar, but also used to generate the `<title>` in HTML.
-It's possible that you want the two things different. For me, my site-title is **“Hux Blog”** but I want the title shows in search engine is **“黄玄的博客 | Hux Blog”** which is multi-language.
+It's possible that you want the two things different. For me, my site-title is **“Hux Blog”** but I want the title shows in search engine is **“高凯成的博客 | Hux Blog”** which is multi-language.
 
 So, the SEO Title is introduced to solve this problem, you can set `SEOTitle` different from `title`, and it would be only used to generate HTML `<title>` and setting DuoShuo Sharing.
 
@@ -361,7 +361,7 @@ This theme uses the default code syntax highlighter of jekyll, "rouge, which is 
 Executing this command to install this plugin:
 
 ```yml
-$ gem install jekyll-paginate 
+$ gem install jekyll-paginate
 ```
 
 This blog started in Jekyll 2 time when `jekyll-paginate` is standard. With Jekyll 3, it's a plugin we included in `_config.yml`.
