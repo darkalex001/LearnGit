@@ -1,6 +1,6 @@
 ---
-title: "NodeJS-聊天室联系"
-subtitle: 'NodeJS-聊天室联系'
+title: "NodeJS-聊天室练习"
+subtitle: 'NodeJS-聊天室练习'
 author: "Kevin"
 header-style: text
 tags:
